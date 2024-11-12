@@ -1,6 +1,7 @@
 import { Head } from '@inertiajs/react'
 import AppLayout from '@/layouts/AppLayout.jsx'
 import '~/css/homepage.css'
+import Banner from '@/components/Banner'
 
 Index.layout = (page) => <AppLayout children={page} />
 export default function Index() {
@@ -14,6 +15,7 @@ export default function Index() {
         <p className="mx-auto max-w-3xl text-center text-xl text-gray-600">
           Mellow handles user management, so you can build what matters.
         </p>
+        <Banner />
       </section>
       <section className="px-4 py-12 md:mx-auto md:w-10/12 md:px-8 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
